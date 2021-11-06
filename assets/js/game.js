@@ -1,4 +1,4 @@
-window.prompt("what is your robot's name?");
+window.prompt("what is your robot's name?", "");
 
 // this creates a function named "fight"
 function fight() {
