@@ -8,7 +8,7 @@ console.log(playerName +" attack amount is "+ playerAttack, " remaining health i
 
 var enemyName = "Robort";
 var enemyHealth = 50;
-var enemyAttack = 75;
+var enemyAttack = 100;
 
 console.log(playerName + " VS " + enemyName);
 
