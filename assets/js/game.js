@@ -8,7 +8,7 @@ console.log(playerName +" attack amount is "+ playerAttack, " remaining health i
 
 var enemyName = "Robort";
 var enemyHealth = 50;
-var enemyAttack = 12;
+var enemyAttack = 75;
 
 console.log(playerName + " VS " + enemyName);
 
@@ -26,7 +26,7 @@ var fight = function() {
   // ck enemy's health
   if (enemyHealth <= 0) {
       window.alert(enemyName + " has died!");
-      return;
+    //   return;
   }
   else {
       window.alert(enemyName + " still has " + enemyHealth + " health left.");
@@ -34,6 +34,15 @@ var fight = function() {
 
   // Subtract the value of `enemyAttack` from the value of `playerHealth` and use that result to update the value in the `playerHealth` variable.
   playerHealth = playerHealth - enemyAttack;
+
+  // ck player's health
+  if (playerHealth <= 0) {
+      window.alert(playerName + " has died!");
+      return;
+  }
+  else {
+      window.alert(playerName + " still has " + playerHealth + " health left.");
+  }
 
   // Log a resulting message to the console so we know that it worked.
   console.log(
