@@ -1,6 +1,7 @@
 var playerName = window.prompt("What is your robot's name?");
 var playerHealth = 100;
 var playerAttack = 25;
+var playerMoney = 10;
 console.log("Your bots name is " + playerName);
 
 // You can also log multiple values at once like this
