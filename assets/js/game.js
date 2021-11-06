@@ -1,22 +1,16 @@
-var playerName = window.prompt("what is your robot's name?");
-console.log(playerName);
-console.log("Our robot's name is " + playerName);
-// Tony the Robot is ready for battle!
-console.log("Tony the Robot" + " is ready for battle!");
+var playerName = window.prompt("What is your robot's name?");
+var playerHealth = 100;
+var playerAttack = 10;
 
-// "Tony the Robot is ready for battle!"
-console.log(playerName + " is ready for battle!");
+// You can also log multiple values at once like this
+console.log(playerName, playerAttack, playerHealth);
 
-// "Your robot, Tony the Robot, has won!
-console.log("Your robot, " + playerName + ", has won!");
+var enemyName = "Robort";
+var enemyHealth = 50;
+var enemyAttack = 12;
 
-// this creates a function named "fight"
-function fight() {
-    window.alert("The fight has begun, Protect your honor!");
-    console.log(fight);
-}
+var fight = function() {
+  window.alert("Welcome to Robot Gladiators!");
+};
 
-
-
-// call back fight function
-// fight();
+fight();
