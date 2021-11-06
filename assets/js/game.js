@@ -26,6 +26,7 @@ var fight = function() {
   // ck enemy's health
   if (enemyHealth <= 0) {
       window.alert(enemyName + " has died!");
+      return;
   }
   else {
       window.alert(enemyName + " still has " + enemyHealth + " health left.");
