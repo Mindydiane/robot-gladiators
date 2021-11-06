@@ -24,12 +24,8 @@ var fight = function() {
   if (promptFight === "fight" || promptFight === "FIGHT") {
     // remove enemy's health by subtracting the amount set in the playerAttack variable
     enemyHealth = enemyHealth - playerAttack;
+    // Log a resulting message to the console so we know that it worked.
     console.log(
-      playerName + " attacked " + enemyName + ". " + enemyName + " now has " + enemyHealth + " health remaining."
-    );
-
-  // Log a resulting message to the console so we know that it worked.
-  console.log(
       playerName + " attacked " + enemyName + ". " + enemyName + " now has " + enemyHealth + " health remaining."
   )
   // ck enemy's health
@@ -63,7 +59,7 @@ var fight = function() {
 
   // if player choses to skip
   } else if (promptFight === "skip" || promptFight === "SKIP") {
-    window.alert(playerName + " has chosen to skip the fight!");
+    window.alert(playerName + " has chosen to skip the fight and will get points deducted!");
   } else {
     window.alert("You need to choose a valid option. Try again!");
   }
