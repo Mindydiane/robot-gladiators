@@ -60,10 +60,19 @@ var fight = function() {
 
   // if player choses to skip
   } else if (promptFight === "skip" || promptFight === "SKIP") {
-    window.alert(playerName + " has chosen to skip the fight and will get points deducted!");
+      // confirm player wants to skip
+      var confirmSkip = window.confirm("Are you sure you'd like to quit? If so points will be deducted!");
+
+      // if yes (true), leave fight
+      if (confirmSkip) {
+        window.alert(playerName + " has decided to skip the fight and points will be deducted!");
+        // subtract money from playerMoney for skipping
+        playerMoney = playerMoney - 2;
+      }
   } else {
     window.alert("You need to choose a valid option. Try again!");
-  }
+  } 
+    
+  
 };
-
 fight();
